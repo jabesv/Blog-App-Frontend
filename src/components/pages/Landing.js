@@ -1,5 +1,6 @@
+import LoginForm from "../forms/LoginForm";
 import { useState } from "react";
-
+import RegisterForm from "../forms/RegisterForm";
 const Landing = (props) => {
     const [hasAccount, setHasAccount] = useState(false)
 

@@ -23,9 +23,9 @@ const LoginForm = (props) => {
         if (res.data.token && res.data.user) {
             localStorage.setItem('userToken', res.data.token)
             props.setUser(res.data.user)
-            history.pushState('/home')
+            history.push('/home')
         } else {
-            console.error(res,data);
+            console.error(res.data);
         }
     })        
    }
