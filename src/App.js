@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { useState } from 'react';
 import Landing from './components/pages/Landing';
 import Home from './components/pages/Home'
-
+import UpdateBlog from './components/forms/UpdateBlog';
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Landing {...routerProps} setUser={setUser}/> } /> 
       <Route path='/home' render={routerProps => <Home 
       {...routerProps} user={user} />} />
+      <Route path='/update/:id' component={UpdateBlog} />
      </Switch>
     </div>
   );

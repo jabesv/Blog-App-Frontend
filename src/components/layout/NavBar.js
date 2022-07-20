@@ -12,7 +12,7 @@ const NavBar = (props) => {
                 <li className="nav-item">
                     <NavLink to='/' className='nav-link'>Landing</NavLink>
                 </li>
-                {props.user && <span>{}props.user.username</span>}
+                {props.user && <span>{props.user.username}</span>}
             </ul>
         </nav>
     )
