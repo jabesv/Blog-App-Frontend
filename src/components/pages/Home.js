@@ -47,18 +47,17 @@ const handleDelete = (blog) => {
     <div className="container">
       <NavBar user={props.user} />
 
-      <h1 className="text center">Home Page</h1>
+      <h1 className="text-center">Home Page</h1>
 
       <CreateBlog className='p-3' setBlogs={setBlogs} blogs={blogs} />
-      <div className="row P3">
-
-      </div>
       
+      <div className="row P3">
+        {blogs && blogs.map((blog) => (
+          <div key={blog._id} className="card col-2 g-2 p-3 rounded-3" style={{ width: "18rem"}} >
+           
+            {/* {gif.data.length > 0 ? <img src={gif.data[Math.floor(Math.random() * 10)].images.original.url} 
+            className="card-img-top rounded-1 P-3" alt="gif" /> : null} */}
 
-      {blogs &&
-        blogs.map((blog) => (
-          <div key={blog._id}>
-            {/* {gif.data.length > 0 ? <img src={gif.data[Math.floor(Math.random() * 1)].images.original.url} className="card-img-top rounded-1 P-3" alt="gif" /> : null} */}
             <h6>{blog.title}</h6>
             <h6>
               {blog.details}{" "}
@@ -85,7 +84,7 @@ const handleDelete = (blog) => {
           </div>
         ))}
         
-
+        </div>
     </div>
   );
 };
