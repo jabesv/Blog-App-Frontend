@@ -25,6 +25,8 @@ useEffect(() => {
     .then(res => setGif(res.data)).catch(err => console.error(err))
 }, [])
 
+
+
 const handleDelete = (blog) => {
     axios
       .delete(`http://localhost:5002/blogs/${blog._id}`, {
@@ -55,8 +57,9 @@ const handleDelete = (blog) => {
         {blogs && blogs.map((blog) => (
           <div key={blog._id} className="card col-2 g-2 p-3 rounded-3" style={{ width: "18rem"}} >
            
-            {/* {gif.data.length > 0 ? <img src={gif.data[Math.floor(Math.random() * 10)].images.original.url} 
-            className="card-img-top rounded-1 P-3" alt="gif" /> : null} */}
+           <div>{gif && gif.data.length > 0 ? <img src={gif.data[Math.floor(Math.random() * 10)].images.original.url} 
+            className="card-img-top rounded-1 P-3" alt="gif" /> : null} </div>
+            
 
             <h6>{blog.title}</h6>
             <h6>

@@ -12,6 +12,10 @@ const NavBar = (props) => {
                 <li className="nav-item">
                     <NavLink to='/' className='nav-link' >Landing</NavLink>
                 </li>
+
+                <li className="nav-item">
+                <NavLink to="/about" className="nav-link">About</NavLink>
+                 </li>
                 {props.user && 
                 <span> Hello , {props.user.username}</span>}
             </ul>

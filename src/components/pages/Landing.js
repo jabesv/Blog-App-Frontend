@@ -8,7 +8,8 @@ const Landing = (props) => {
 
     return (
         <div>
-            <h1>Landing Page</h1>
+            <br></br>
+            <h1 className="text-center">Landing Page</h1><br></br>
 
             {hasAccount === false ? (
                 <div>
