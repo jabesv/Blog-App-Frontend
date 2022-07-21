@@ -9,7 +9,7 @@ const CreateBlog = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('http://localhost:5002/blogs', formData, {
+    axios.post('https://jab-blog-api.herokuapp.com/blogs', formData, {
         headers: {
           'x-auth-token': localStorage.getItem("userToken")
         }
