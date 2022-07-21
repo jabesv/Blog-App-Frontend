@@ -11,7 +11,7 @@ const Home = (props) => {
 
 useEffect(() => {
     axios
-      .get('http://localhost:5002/blogs', {
+      .get('https://jab-blog-api.herokuapp.com/blogs', {
         headers: {
             'x-auth-token': localStorage.getItem('userToken'),
         }
@@ -29,7 +29,7 @@ useEffect(() => {
 
 const handleDelete = (blog) => {
     axios
-      .delete(`http://localhost:5002/blogs/${blog._id}`, {
+      .delete(`https://jab-blog-api.herokuapp.com/blogs/${blog._id}`, {
         headers: {
           "x-auth-token": localStorage.getItem("userToken"),
         },
