@@ -8,8 +8,11 @@ This app was developed with ReactJS.
 The backend is connected to the MongoDB.
 
 
-### Run Locally
+## Check the app here:
+https://jvblogappfrontend.netlify.app/
 
+
+### Run Locally
 Clone the project from: 
 https://github.com/jabesv/Blog-App-Frontend
 
