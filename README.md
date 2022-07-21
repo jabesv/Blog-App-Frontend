@@ -1,12 +1,47 @@
 # BlogApp-Frontend
 
-This project is a blog API with a serie of functions available to the users where they can enter by registering and after that, the user can read, create, update and delete blogs (posts).
+This MERN project is a blog API with a serie of functions available to the users where they can enter by registering and after that, the user can read, create, update and delete blogs (posts) also knowm as CRUD funtionality.
 
 ## Tech
 
 This app was developed with ReactJS.
 The backend is connected to the MongoDB.
 
+
+### Run Locally
+
+Clone the project from: 
+https://github.com/jabesv/Blog-App-Frontend
+
+Go to the project directory and install the following dependencies:
+
+ npm i:
+        - axios
+        - bootstrap
+        - react-dom
+        - react-router-dom
+        - react-scripts
+
+Once you have installed the dependencies you may run the app with npm start 
+
+
+## Components
+    ### Forms:
+                - CreateBLog.js
+                - LoginForm.js
+                - RegisterForm.js
+                - UpdateBlog.js
+
+    ### Layout:
+                - NavBar
+
+    ### Pages:
+                - About.js
+                - Home.js
+                - Landing.js
+                - Giphy.js
+
+        
 
 
 
