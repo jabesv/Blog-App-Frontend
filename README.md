@@ -3,7 +3,6 @@
 This MERN project is a blog API with a serie of functions available to the users where they can enter by registering and after that, the user can read, create, update and delete blogs (posts) also knowm as CRUD funtionality.
 
 ## Tech
-
 This app was developed with ReactJS.
 The backend is connected to the MongoDB.
 
@@ -44,10 +43,7 @@ Once you have installed the dependencies you may run the app with npm start
                 - Landing.js
                 - Giphy.js
 
-        
-
-
-
+       
 
 # Getting Started with Create React App
 
